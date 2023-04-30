@@ -30,9 +30,9 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "3.4.2-solc-0.7",
-    "@mageswap/lib": "^4.0.1-alpha",
-    "@mageswap/v2-core": "1.0.1",
-    "@mageswap/v3-core": "1.0.0",
+    "@mageswap/lib": "github:mageswap/lib",
+    "@mageswap/v2-core": "github:mageswap/v2-core",
+    "@mageswap/v3-core": "github:mageswap/v3-core",
     "base64-sol": "1.0.1"
   },
   "devDependencies": {
