@@ -1,0 +1,2599 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint32[4]",
+          "name": "_blockTimestamps",
+          "type": "uint32[4]"
+        },
+        {
+          "internalType": "int56[4]",
+          "name": "_tickCumulatives",
+          "type": "int56[4]"
+        },
+        {
+          "internalType": "uint128[4]",
+          "name": "_secondsPerLiquidityCumulativeX128s",
+          "type": "uint128[4]"
+        },
+        {
+          "internalType": "bool[4]",
+          "name": "_initializeds",
+          "type": "bool[4]"
+        },
+        {
+          "internalType": "int24",
+          "name": "_tick",
+          "type": "int24"
+        },
+        {
+          "internalType": "uint16",
+          "name": "_observationCardinality",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "_observationIndex",
+          "type": "uint16"
+        },
+        {
+          "internalType": "bool",
+          "name": "_lastObservationCurrentTimestamp",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_liquidity",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "liquidity",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "observations",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "int56",
+          "name": "",
+          "type": "int56"
+        },
+        {
+          "internalType": "uint160",
+          "name": "",
+          "type": "uint160"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "slot0",
+      "outputs": [
+        {
+          "internalType": "uint160",
+          "name": "",
+          "type": "uint160"
+        },
+        {
+          "internalType": "int24",
+          "name": "",
+          "type": "int24"
+        },
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b506040516104ac3803806104ac83398181016040526102a081101561003457600080fd5b5061020081015161022082015161024083015161026084015161028085015160808601946101008701946101808801949193909260005b600481101561019c5760405180608001604052808b836004811061008b57fe5b602002015163ffffffff1681526020018a83600481106100a757fe5b602002015160060b81526020018983600481106100c057fe5b60200201516001600160801b03166001600160a01b031681526020018883600481106100e857fe5b602002015115159052600082600481106100fe57fe5b825191018054602084015160408501516060909501511515600160f81b026001600160f81b036001600160a01b039096166b01000000000000000000000002600160581b600160f81b031960069390930b66ffffffffffffff166401000000000266ffffffffffffff60201b1963ffffffff90971663ffffffff1990951694909417959095169290921716929092179290921617905560010161006b565b506004805462ffffff191662ffffff60029790970b969096169590951764ffff0000001916630100000061ffff958616021761ffff60281b19166501000000000093909416929092029290921760ff60b81b1916600160b81b9215159290920291909117600160381b600160b81b0319166701000000000000006001600160801b0392909216919091021790555061026d925082915061023f90506000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80631a68650214610046578063252c09d71461006a5780633850c7bd146100c1575b600080fd5b61004e61011a565b604080516001600160801b039092168252519081900360200190f35b6100876004803603602081101561008057600080fd5b5035610134565b6040805163ffffffff909516855260069390930b60208501526001600160a01b039091168383015215156060830152519081900360800190f35b6100c9610209565b604080516001600160a01b03909816885260029690960b602088015261ffff9485168787015292841660608701529216608085015260ff90911660a0840152151560c0830152519081900360e00190f35b60045467010000000000000090046001600160801b031681565b600080600080600080866004811061014857fe5b60408051608081018252929091015463ffffffff811683526401000000008104600690810b810b900b60208401526001600160a01b03600160581b8204169183019190915260ff600160f81b909104811615156060830152600454919250600160b81b90910416156101e8578051600480546000916501000000000090910461ffff169081106101d457fe5b015463ffffffff9081169190910342031681525b80516020820151604083015160609093015191989097509195509350915050565b600454600090600281900b9061ffff650100000000008204811691630100000090041683808091929394959656fea2646970667358221220f29a47d435c1b904b4702b2b2167c4b9e960be3c70d0f0a39b94242d3edea06264736f6c63430007060033",
+    "sourceMap": "124:2343:56:-:0;;;408:1021;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;408:1021:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;797:9;792:381;816:23;812:1;:27;792:381;;;884:278;;;;;;;;937:16;954:1;937:19;;;;;;;;;;;884:278;;;;;;990:16;1007:1;990:19;;;;;;;;;;;884:278;;;;;;1062:35;1098:1;1062:38;;;;;;;;;;;-1:-1:-1;;;;;884:278:56;-1:-1:-1;;;;;884:278:56;;;;;1131:13;1145:1;1131:16;;;;;;;;;;;884:278;;;;860:18;879:1;860:21;;;;;;;:302;;:21;;:302;;;;;;;;;;;;;;;;;-1:-1:-1;;;860:302:56;-1:-1:-1;;;;;;;;;;860:302:56;;;;;-1:-1:-1;;;;;;;;860:302:56;;;;;;;;;-1:-1:-1;;;;860:302:56;;;;-1:-1:-1;;860:302:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;841:3;792:381;;;-1:-1:-1;1183:9:56;:17;;-1:-1:-1;;1183:17:56;;;;;;;;;;;;;;;-1:-1:-1;;1210:53:56;;;;;;;;-1:-1:-1;;;;1273:41:56;;;;;;;;;;;;;;-1:-1:-1;;;;1324:66:56;-1:-1:-1;;;1324:66:56;;;;;;;;;;;-1:-1:-1;;;;;;;;1400:22:56;;-1:-1:-1;;;;;1400:22:56;;;;;;;;;;;-1:-1:-1;124:2343:56;;-1:-1:-1;124:2343:56;;-1:-1:-1;124:2343:56;;-1:-1:-1;;124:2343:56;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80631a68650214610046578063252c09d71461006a5780633850c7bd146100c1575b600080fd5b61004e61011a565b604080516001600160801b039092168252519081900360200190f35b6100876004803603602081101561008057600080fd5b5035610134565b6040805163ffffffff909516855260069390930b60208501526001600160a01b039091168383015215156060830152519081900360800190f35b6100c9610209565b604080516001600160a01b03909816885260029690960b602088015261ffff9485168787015292841660608701529216608085015260ff90911660a0840152151560c0830152519081900360e00190f35b60045467010000000000000090046001600160801b031681565b600080600080600080866004811061014857fe5b60408051608081018252929091015463ffffffff811683526401000000008104600690810b810b900b60208401526001600160a01b03600160581b8204169183019190915260ff600160f81b909104811615156060830152600454919250600160b81b90910416156101e8578051600480546000916501000000000090910461ffff169081106101d457fe5b015463ffffffff9081169190910342031681525b80516020820151604083015160609093015191989097509195509350915050565b600454600090600281900b9061ffff650100000000008204811691630100000090041683808091929394959656fea2646970667358221220f29a47d435c1b904b4702b2b2167c4b9e960be3c70d0f0a39b94242d3edea06264736f6c63430007060033",
+    "sourceMap": "124:2343:56:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;325:24;;;:::i;:::-;;;;-1:-1:-1;;;;;325:24:56;;;;;;;;;;;;;;1759:706;;;;;;;;;;;;;;;;-1:-1:-1;1759:706:56;;:::i;:::-;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;1759:706:56;;;;;;;;;;;;;;;;;;;;;;1435:318;;;:::i;:::-;;;;-1:-1:-1;;;;;1435:318:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;325:24;;;;;;-1:-1:-1;;;;;325:24:56;;:::o;1759:706::-;1856:6;1876:5;1895:7;1916:4;1945:37;1985:18;2004:5;1985:25;;;;;;;1945:65;;;;;;;;1985:25;;;;1945:65;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;;;1945:65:56;;;;;;;;;;;-1:-1:-1;;;1945:65:56;;;;;;;;;;;;2024:31;1945:65;;-1:-1:-1;;;;2024:31:56;;;;2020:236;;;2218:26;;2178:21;;;2218:26;;2178:21;;;;;;;2159:41;;;;;;;:56;;;;;:85;;;;2123:15;2116:129;2071:174;;;2020:236;2286:26;;2326;;;;2366:45;;;;2425:23;;;;;2286:26;;2326;;-1:-1:-1;2366:45:56;;-1:-1:-1;2425:23:56;-1:-1:-1;1759:706:56;-1:-1:-1;;1759:706:56:o;1435:318::-;1671:9;;1512:7;;1671:9;;;;;1682:21;;;;;;;1705:27;;;;1512:7;;;1435:318;;;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "liquidity()": "1a686502",
+    "observations(uint256)": "252c09d7",
+    "slot0()": "3850c7bd"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32[4]\",\"name\":\"_blockTimestamps\",\"type\":\"uint32[4]\"},{\"internalType\":\"int56[4]\",\"name\":\"_tickCumulatives\",\"type\":\"int56[4]\"},{\"internalType\":\"uint128[4]\",\"name\":\"_secondsPerLiquidityCumulativeX128s\",\"type\":\"uint128[4]\"},{\"internalType\":\"bool[4]\",\"name\":\"_initializeds\",\"type\":\"bool[4]\"},{\"internalType\":\"int24\",\"name\":\"_tick\",\"type\":\"int24\"},{\"internalType\":\"uint16\",\"name\":\"_observationCardinality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"_observationIndex\",\"type\":\"uint16\"},{\"internalType\":\"bool\",\"name\":\"_lastObservationCurrentTimestamp\",\"type\":\"bool\"},{\"internalType\":\"uint128\",\"name\":\"_liquidity\",\"type\":\"uint128\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"liquidity\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"\",\"type\":\"uint128\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"observations\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"},{\"internalType\":\"int56\",\"name\":\"\",\"type\":\"int56\"},{\"internalType\":\"uint160\",\"name\":\"\",\"type\":\"uint160\"},{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"slot0\",\"outputs\":[{\"internalType\":\"uint160\",\"name\":\"\",\"type\":\"uint160\"},{\"internalType\":\"int24\",\"name\":\"\",\"type\":\"int24\"},{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"},{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/MockObservations.sol\":\"MockObservations\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":@mageswap/=node_modules/@mageswap/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":base64-sol/=node_modules/base64-sol/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/test/MockObservations.sol\":{\"keccak256\":\"0x0fb4c2f20a946e8389d0b045d42fb6ab4a63d96dd8b25ed09c4f4936477b77c4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://54e9519a0bf00079ea7a6e1d3e4f1a17d2fabc7bcc8264e5313a6861d647e26d\",\"dweb:/ipfs/QmcvZAt95HXVcaWMd7T4uNAevn6efg5o5A2zxpeZihH6Su\"]},\"node_modules/@mageswap/v3-core/contracts/libraries/Oracle.sol\":{\"keccak256\":\"0x82799a37c6b962a506550fd7149fcf1346d007c7bf7496d08eab1e2081185398\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://b584d193084495237dbf77fca81bd6099bff83364e73cb9866bd3c805ca887f2\",\"dweb:/ipfs/QmQsbUm87Vzh6HaUTLxztpfkYZEhjt6WsoQgdMW8heVCHn\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint32[4]",
+              "name": "_blockTimestamps",
+              "type": "uint32[4]"
+            },
+            {
+              "internalType": "int56[4]",
+              "name": "_tickCumulatives",
+              "type": "int56[4]"
+            },
+            {
+              "internalType": "uint128[4]",
+              "name": "_secondsPerLiquidityCumulativeX128s",
+              "type": "uint128[4]"
+            },
+            {
+              "internalType": "bool[4]",
+              "name": "_initializeds",
+              "type": "bool[4]"
+            },
+            {
+              "internalType": "int24",
+              "name": "_tick",
+              "type": "int24"
+            },
+            {
+              "internalType": "uint16",
+              "name": "_observationCardinality",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "_observationIndex",
+              "type": "uint16"
+            },
+            {
+              "internalType": "bool",
+              "name": "_lastObservationCurrentTimestamp",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint128",
+              "name": "_liquidity",
+              "type": "uint128"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "liquidity",
+          "outputs": [
+            {
+              "internalType": "uint128",
+              "name": "",
+              "type": "uint128"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "observations",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            },
+            {
+              "internalType": "int56",
+              "name": "",
+              "type": "int56"
+            },
+            {
+              "internalType": "uint160",
+              "name": "",
+              "type": "uint160"
+            },
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "slot0",
+          "outputs": [
+            {
+              "internalType": "uint160",
+              "name": "",
+              "type": "uint160"
+            },
+            {
+              "internalType": "int24",
+              "name": "",
+              "type": "int24"
+            },
+            {
+              "internalType": "uint16",
+              "name": "",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint16",
+              "name": "",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@mageswap/=node_modules/@mageswap/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/test/MockObservations.sol": "MockObservations"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/test/MockObservations.sol": {
+        "keccak256": "0x0fb4c2f20a946e8389d0b045d42fb6ab4a63d96dd8b25ed09c4f4936477b77c4",
+        "urls": [
+          "bzz-raw://54e9519a0bf00079ea7a6e1d3e4f1a17d2fabc7bcc8264e5313a6861d647e26d",
+          "dweb:/ipfs/QmcvZAt95HXVcaWMd7T4uNAevn6efg5o5A2zxpeZihH6Su"
+        ],
+        "license": "UNLICENSED"
+      },
+      "node_modules/@mageswap/v3-core/contracts/libraries/Oracle.sol": {
+        "keccak256": "0x82799a37c6b962a506550fd7149fcf1346d007c7bf7496d08eab1e2081185398",
+        "urls": [
+          "bzz-raw://b584d193084495237dbf77fca81bd6099bff83364e73cb9866bd3c805ca887f2",
+          "dweb:/ipfs/QmQsbUm87Vzh6HaUTLxztpfkYZEhjt6WsoQgdMW8heVCHn"
+        ],
+        "license": "BUSL-1.1"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/test/MockObservations.sol",
+    "id": 12056,
+    "exportedSymbols": {
+      "MockObservations": [
+        12055
+      ],
+      "Oracle": [
+        16071
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:2429:56",
+    "nodes": [
+      {
+        "id": 11875,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:56",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 11876,
+        "nodeType": "ImportDirective",
+        "src": "64:58:56",
+        "nodes": [],
+        "absolutePath": "node_modules/@mageswap/v3-core/contracts/libraries/Oracle.sol",
+        "file": "@mageswap/v3-core/contracts/libraries/Oracle.sol",
+        "scope": 12056,
+        "sourceUnit": 16072,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12055,
+        "nodeType": "ContractDefinition",
+        "src": "124:2343:56",
+        "nodes": [
+          {
+            "id": 11880,
+            "nodeType": "VariableDeclaration",
+            "src": "156:49:56",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "oracleObservations",
+            "scope": 12055,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Observation_$15348_storage_$4_storage",
+              "typeString": "struct Oracle.Observation[4]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 11877,
+                "name": "Oracle.Observation",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 15348,
+                "src": "156:18:56",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Observation_$15348_storage_ptr",
+                  "typeString": "struct Oracle.Observation"
+                }
+              },
+              "id": 11879,
+              "length": {
+                "hexValue": "34",
+                "id": 11878,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "175:1:56",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_4_by_1",
+                  "typeString": "int_const 4"
+                },
+                "value": "4"
+              },
+              "nodeType": "ArrayTypeName",
+              "src": "156:21:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Observation_$15348_storage_$4_storage_ptr",
+                "typeString": "struct Oracle.Observation[4]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 11882,
+            "nodeType": "VariableDeclaration",
+            "src": "212:15:56",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "slot0Tick",
+            "scope": 12055,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int24",
+              "typeString": "int24"
+            },
+            "typeName": {
+              "id": 11881,
+              "name": "int24",
+              "nodeType": "ElementaryTypeName",
+              "src": "212:5:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int24",
+                "typeString": "int24"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 11884,
+            "nodeType": "VariableDeclaration",
+            "src": "233:43:56",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "slot0ObservationCardinality",
+            "scope": 12055,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 11883,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "233:6:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 11886,
+            "nodeType": "VariableDeclaration",
+            "src": "282:37:56",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "slot0ObservationIndex",
+            "scope": 12055,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 11885,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "282:6:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 11888,
+            "nodeType": "VariableDeclaration",
+            "src": "325:24:56",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "1a686502",
+            "mutability": "mutable",
+            "name": "liquidity",
+            "scope": 12055,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint128",
+              "typeString": "uint128"
+            },
+            "typeName": {
+              "id": 11887,
+              "name": "uint128",
+              "nodeType": "ElementaryTypeName",
+              "src": "325:7:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint128",
+                "typeString": "uint128"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 11890,
+            "nodeType": "VariableDeclaration",
+            "src": "356:45:56",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "lastObservationCurrentTimestamp",
+            "scope": 12055,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 11889,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "356:4:56",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 11973,
+            "nodeType": "FunctionDefinition",
+            "src": "408:1021:56",
+            "nodes": [],
+            "body": {
+              "id": 11972,
+              "nodeType": "Block",
+              "src": "782:647:56",
+              "nodes": [],
+              "statements": [
+                {
+                  "body": {
+                    "id": 11950,
+                    "nodeType": "Block",
+                    "src": "846:327:56",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 11948,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "baseExpression": {
+                              "id": 11930,
+                              "name": "oracleObservations",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 11880,
+                              "src": "860:18:56",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_struct$_Observation_$15348_storage_$4_storage",
+                                "typeString": "struct Oracle.Observation storage ref[4] storage ref"
+                              }
+                            },
+                            "id": 11932,
+                            "indexExpression": {
+                              "id": 11931,
+                              "name": "i",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 11920,
+                              "src": "879:1:56",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "nodeType": "IndexAccess",
+                            "src": "860:21:56",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Observation_$15348_storage",
+                              "typeString": "struct Oracle.Observation storage ref"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "arguments": [
+                              {
+                                "baseExpression": {
+                                  "id": 11935,
+                                  "name": "_blockTimestamps",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 11894,
+                                  "src": "937:16:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_array$_t_uint32_$4_memory_ptr",
+                                    "typeString": "uint32[4] memory"
+                                  }
+                                },
+                                "id": 11937,
+                                "indexExpression": {
+                                  "id": 11936,
+                                  "name": "i",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 11920,
+                                  "src": "954:1:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "nodeType": "IndexAccess",
+                                "src": "937:19:56",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                }
+                              },
+                              {
+                                "baseExpression": {
+                                  "id": 11938,
+                                  "name": "_tickCumulatives",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 11898,
+                                  "src": "990:16:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_array$_t_int56_$4_memory_ptr",
+                                    "typeString": "int56[4] memory"
+                                  }
+                                },
+                                "id": 11940,
+                                "indexExpression": {
+                                  "id": 11939,
+                                  "name": "i",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 11920,
+                                  "src": "1007:1:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "nodeType": "IndexAccess",
+                                "src": "990:19:56",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_int56",
+                                  "typeString": "int56"
+                                }
+                              },
+                              {
+                                "baseExpression": {
+                                  "id": 11941,
+                                  "name": "_secondsPerLiquidityCumulativeX128s",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 11902,
+                                  "src": "1062:35:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_array$_t_uint128_$4_memory_ptr",
+                                    "typeString": "uint128[4] memory"
+                                  }
+                                },
+                                "id": 11943,
+                                "indexExpression": {
+                                  "id": 11942,
+                                  "name": "i",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 11920,
+                                  "src": "1098:1:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "nodeType": "IndexAccess",
+                                "src": "1062:38:56",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint128",
+                                  "typeString": "uint128"
+                                }
+                              },
+                              {
+                                "baseExpression": {
+                                  "id": 11944,
+                                  "name": "_initializeds",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 11906,
+                                  "src": "1131:13:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_array$_t_bool_$4_memory_ptr",
+                                    "typeString": "bool[4] memory"
+                                  }
+                                },
+                                "id": 11946,
+                                "indexExpression": {
+                                  "id": 11945,
+                                  "name": "i",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 11920,
+                                  "src": "1145:1:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                },
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "nodeType": "IndexAccess",
+                                "src": "1131:16:56",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint32",
+                                  "typeString": "uint32"
+                                },
+                                {
+                                  "typeIdentifier": "t_int56",
+                                  "typeString": "int56"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint128",
+                                  "typeString": "uint128"
+                                },
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "expression": {
+                                "id": 11933,
+                                "name": "Oracle",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 16071,
+                                "src": "884:6:56",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_Oracle_$16071_$",
+                                  "typeString": "type(library Oracle)"
+                                }
+                              },
+                              "id": 11934,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "Observation",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 15348,
+                              "src": "884:18:56",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_struct$_Observation_$15348_storage_ptr_$",
+                                "typeString": "type(struct Oracle.Observation storage pointer)"
+                              }
+                            },
+                            "id": 11947,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "structConstructorCall",
+                            "lValueRequested": false,
+                            "names": [
+                              "blockTimestamp",
+                              "tickCumulative",
+                              "secondsPerLiquidityCumulativeX128",
+                              "initialized"
+                            ],
+                            "nodeType": "FunctionCall",
+                            "src": "884:278:56",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Observation_$15348_memory_ptr",
+                              "typeString": "struct Oracle.Observation memory"
+                            }
+                          },
+                          "src": "860:302:56",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Observation_$15348_storage",
+                            "typeString": "struct Oracle.Observation storage ref"
+                          }
+                        },
+                        "id": 11949,
+                        "nodeType": "ExpressionStatement",
+                        "src": "860:302:56"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 11926,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 11923,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11920,
+                      "src": "812:1:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "expression": {
+                        "id": 11924,
+                        "name": "_blockTimestamps",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11894,
+                        "src": "816:16:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint32_$4_memory_ptr",
+                          "typeString": "uint32[4] memory"
+                        }
+                      },
+                      "id": 11925,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "src": "816:23:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "812:27:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 11951,
+                  "initializationExpression": {
+                    "assignments": [
+                      11920
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 11920,
+                        "mutability": "mutable",
+                        "name": "i",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 11951,
+                        "src": "797:9:56",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 11919,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "797:7:56",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 11922,
+                    "initialValue": {
+                      "hexValue": "30",
+                      "id": 11921,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "809:1:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "797:13:56"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "id": 11928,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "++",
+                      "prefix": false,
+                      "src": "841:3:56",
+                      "subExpression": {
+                        "id": 11927,
+                        "name": "i",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11920,
+                        "src": "841:1:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 11929,
+                    "nodeType": "ExpressionStatement",
+                    "src": "841:3:56"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "792:381:56"
+                },
+                {
+                  "expression": {
+                    "id": 11954,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 11952,
+                      "name": "slot0Tick",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11882,
+                      "src": "1183:9:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int24",
+                        "typeString": "int24"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 11953,
+                      "name": "_tick",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11908,
+                      "src": "1195:5:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int24",
+                        "typeString": "int24"
+                      }
+                    },
+                    "src": "1183:17:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "id": 11955,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1183:17:56"
+                },
+                {
+                  "expression": {
+                    "id": 11958,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 11956,
+                      "name": "slot0ObservationCardinality",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11884,
+                      "src": "1210:27:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 11957,
+                      "name": "_observationCardinality",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11910,
+                      "src": "1240:23:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "src": "1210:53:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "id": 11959,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1210:53:56"
+                },
+                {
+                  "expression": {
+                    "id": 11962,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 11960,
+                      "name": "slot0ObservationIndex",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11886,
+                      "src": "1273:21:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 11961,
+                      "name": "_observationIndex",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11912,
+                      "src": "1297:17:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "src": "1273:41:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "id": 11963,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1273:41:56"
+                },
+                {
+                  "expression": {
+                    "id": 11966,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 11964,
+                      "name": "lastObservationCurrentTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11890,
+                      "src": "1324:31:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 11965,
+                      "name": "_lastObservationCurrentTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11914,
+                      "src": "1358:32:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "1324:66:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 11967,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1324:66:56"
+                },
+                {
+                  "expression": {
+                    "id": 11970,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 11968,
+                      "name": "liquidity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11888,
+                      "src": "1400:9:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 11969,
+                      "name": "_liquidity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11916,
+                      "src": "1412:10:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "1400:22:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 11971,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1400:22:56"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "parameters": {
+              "id": 11917,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11894,
+                  "mutability": "mutable",
+                  "name": "_blockTimestamps",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "429:33:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint32_$4_memory_ptr",
+                    "typeString": "uint32[4]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11891,
+                      "name": "uint32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "429:6:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint32",
+                        "typeString": "uint32"
+                      }
+                    },
+                    "id": 11893,
+                    "length": {
+                      "hexValue": "34",
+                      "id": 11892,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "436:1:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_4_by_1",
+                        "typeString": "int_const 4"
+                      },
+                      "value": "4"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "429:9:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint32_$4_storage_ptr",
+                      "typeString": "uint32[4]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11898,
+                  "mutability": "mutable",
+                  "name": "_tickCumulatives",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "472:32:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_int56_$4_memory_ptr",
+                    "typeString": "int56[4]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11895,
+                      "name": "int56",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "472:5:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int56",
+                        "typeString": "int56"
+                      }
+                    },
+                    "id": 11897,
+                    "length": {
+                      "hexValue": "34",
+                      "id": 11896,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "478:1:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_4_by_1",
+                        "typeString": "int_const 4"
+                      },
+                      "value": "4"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "472:8:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_int56_$4_storage_ptr",
+                      "typeString": "int56[4]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11902,
+                  "mutability": "mutable",
+                  "name": "_secondsPerLiquidityCumulativeX128s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "514:53:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint128_$4_memory_ptr",
+                    "typeString": "uint128[4]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11899,
+                      "name": "uint128",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "514:7:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "id": 11901,
+                    "length": {
+                      "hexValue": "34",
+                      "id": 11900,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "522:1:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_4_by_1",
+                        "typeString": "int_const 4"
+                      },
+                      "value": "4"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "514:10:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint128_$4_storage_ptr",
+                      "typeString": "uint128[4]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11906,
+                  "mutability": "mutable",
+                  "name": "_initializeds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "577:28:56",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bool_$4_memory_ptr",
+                    "typeString": "bool[4]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11903,
+                      "name": "bool",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "577:4:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "id": 11905,
+                    "length": {
+                      "hexValue": "34",
+                      "id": 11904,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "582:1:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_4_by_1",
+                        "typeString": "int_const 4"
+                      },
+                      "value": "4"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "577:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bool_$4_storage_ptr",
+                      "typeString": "bool[4]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11908,
+                  "mutability": "mutable",
+                  "name": "_tick",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "615:11:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 11907,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "615:5:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11910,
+                  "mutability": "mutable",
+                  "name": "_observationCardinality",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "636:30:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 11909,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "636:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11912,
+                  "mutability": "mutable",
+                  "name": "_observationIndex",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "676:24:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 11911,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "676:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11914,
+                  "mutability": "mutable",
+                  "name": "_lastObservationCurrentTimestamp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "710:37:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 11913,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "710:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11916,
+                  "mutability": "mutable",
+                  "name": "_liquidity",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11973,
+                  "src": "757:18:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 11915,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "757:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "419:362:56"
+            },
+            "returnParameters": {
+              "id": 11918,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "782:0:56"
+            },
+            "scope": 12055,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 12000,
+            "nodeType": "FunctionDefinition",
+            "src": "1435:318:56",
+            "nodes": [],
+            "body": {
+              "id": 11999,
+              "nodeType": "Block",
+              "src": "1650:103:56",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "components": [
+                      {
+                        "hexValue": "30",
+                        "id": 11990,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1668:1:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "id": 11991,
+                        "name": "slot0Tick",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11882,
+                        "src": "1671:9:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int24",
+                          "typeString": "int24"
+                        }
+                      },
+                      {
+                        "id": 11992,
+                        "name": "slot0ObservationIndex",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11886,
+                        "src": "1682:21:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      },
+                      {
+                        "id": 11993,
+                        "name": "slot0ObservationCardinality",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11884,
+                        "src": "1705:27:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint16",
+                          "typeString": "uint16"
+                        }
+                      },
+                      {
+                        "hexValue": "30",
+                        "id": 11994,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1734:1:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "hexValue": "30",
+                        "id": 11995,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1737:1:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "hexValue": "66616c7365",
+                        "id": 11996,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1740:5:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      }
+                    ],
+                    "id": 11997,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1667:79:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_rational_0_by_1_$_t_int24_$_t_uint16_$_t_uint16_$_t_rational_0_by_1_$_t_rational_0_by_1_$_t_bool_$",
+                      "typeString": "tuple(int_const 0,int24,uint16,uint16,int_const 0,int_const 0,bool)"
+                    }
+                  },
+                  "functionReturnParameters": 11989,
+                  "id": 11998,
+                  "nodeType": "Return",
+                  "src": "1660:86:56"
+                }
+              ]
+            },
+            "functionSelector": "3850c7bd",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "slot0",
+            "parameters": {
+              "id": 11974,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1449:2:56"
+            },
+            "returnParameters": {
+              "id": 11989,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11976,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12000,
+                  "src": "1512:7:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  },
+                  "typeName": {
+                    "id": 11975,
+                    "name": "uint160",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1512:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11978,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12000,
+                  "src": "1533:5:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int24",
+                    "typeString": "int24"
+                  },
+                  "typeName": {
+                    "id": 11977,
+                    "name": "int24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1533:5:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int24",
+                      "typeString": "int24"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11980,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12000,
+                  "src": "1552:6:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 11979,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1552:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11982,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12000,
+                  "src": "1572:6:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 11981,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1572:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11984,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12000,
+                  "src": "1592:6:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 11983,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1592:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11986,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12000,
+                  "src": "1612:5:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 11985,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1612:5:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11988,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12000,
+                  "src": "1631:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 11987,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1631:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1498:147:56"
+            },
+            "scope": 12055,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 12054,
+            "nodeType": "FunctionDefinition",
+            "src": "1759:706:56",
+            "nodes": [],
+            "body": {
+              "id": 12053,
+              "nodeType": "Block",
+              "src": "1935:530:56",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    12016
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 12016,
+                      "mutability": "mutable",
+                      "name": "observation",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 12053,
+                      "src": "1945:37:56",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Observation_$15348_memory_ptr",
+                        "typeString": "struct Oracle.Observation"
+                      },
+                      "typeName": {
+                        "id": 12015,
+                        "name": "Oracle.Observation",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 15348,
+                        "src": "1945:18:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Observation_$15348_storage_ptr",
+                          "typeString": "struct Oracle.Observation"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 12020,
+                  "initialValue": {
+                    "baseExpression": {
+                      "id": 12017,
+                      "name": "oracleObservations",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11880,
+                      "src": "1985:18:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_Observation_$15348_storage_$4_storage",
+                        "typeString": "struct Oracle.Observation storage ref[4] storage ref"
+                      }
+                    },
+                    "id": 12019,
+                    "indexExpression": {
+                      "id": 12018,
+                      "name": "index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12002,
+                      "src": "2004:5:56",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1985:25:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Observation_$15348_storage",
+                      "typeString": "struct Oracle.Observation storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1945:65:56"
+                },
+                {
+                  "condition": {
+                    "id": 12021,
+                    "name": "lastObservationCurrentTimestamp",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 11890,
+                    "src": "2024:31:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 12042,
+                  "nodeType": "IfStatement",
+                  "src": "2020:236:56",
+                  "trueBody": {
+                    "id": 12041,
+                    "nodeType": "Block",
+                    "src": "2057:199:56",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 12039,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 12022,
+                              "name": "observation",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 12016,
+                              "src": "2071:11:56",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Observation_$15348_memory_ptr",
+                                "typeString": "struct Oracle.Observation memory"
+                              }
+                            },
+                            "id": 12024,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "blockTimestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 15341,
+                            "src": "2071:26:56",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "commonType": {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            },
+                            "id": 12038,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "arguments": [
+                                {
+                                  "expression": {
+                                    "id": 12027,
+                                    "name": "block",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": -4,
+                                    "src": "2123:5:56",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_magic_block",
+                                      "typeString": "block"
+                                    }
+                                  },
+                                  "id": 12028,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "timestamp",
+                                  "nodeType": "MemberAccess",
+                                  "src": "2123:15:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  }
+                                ],
+                                "id": 12026,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "2116:6:56",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint32_$",
+                                  "typeString": "type(uint32)"
+                                },
+                                "typeName": {
+                                  "id": 12025,
+                                  "name": "uint32",
+                                  "nodeType": "ElementaryTypeName",
+                                  "src": "2116:6:56",
+                                  "typeDescriptions": {}
+                                }
+                              },
+                              "id": 12029,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "2116:23:56",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "-",
+                            "rightExpression": {
+                              "components": [
+                                {
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  },
+                                  "id": 12036,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "leftExpression": {
+                                    "expression": {
+                                      "baseExpression": {
+                                        "id": 12030,
+                                        "name": "oracleObservations",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 11880,
+                                        "src": "2159:18:56",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_array$_t_struct$_Observation_$15348_storage_$4_storage",
+                                          "typeString": "struct Oracle.Observation storage ref[4] storage ref"
+                                        }
+                                      },
+                                      "id": 12032,
+                                      "indexExpression": {
+                                        "id": 12031,
+                                        "name": "slot0ObservationIndex",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 11886,
+                                        "src": "2178:21:56",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint16",
+                                          "typeString": "uint16"
+                                        }
+                                      },
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "nodeType": "IndexAccess",
+                                      "src": "2159:41:56",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Observation_$15348_storage",
+                                        "typeString": "struct Oracle.Observation storage ref"
+                                      }
+                                    },
+                                    "id": 12033,
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "blockTimestamp",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 15341,
+                                    "src": "2159:56:56",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint32",
+                                      "typeString": "uint32"
+                                    }
+                                  },
+                                  "nodeType": "BinaryOperation",
+                                  "operator": "-",
+                                  "rightExpression": {
+                                    "expression": {
+                                      "id": 12034,
+                                      "name": "observation",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 12016,
+                                      "src": "2218:11:56",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Observation_$15348_memory_ptr",
+                                        "typeString": "struct Oracle.Observation memory"
+                                      }
+                                    },
+                                    "id": 12035,
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "blockTimestamp",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 15341,
+                                    "src": "2218:26:56",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_uint32",
+                                      "typeString": "uint32"
+                                    }
+                                  },
+                                  "src": "2159:85:56",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                  }
+                                }
+                              ],
+                              "id": 12037,
+                              "isConstant": false,
+                              "isInlineArray": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "TupleExpression",
+                              "src": "2158:87:56",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint32",
+                                "typeString": "uint32"
+                              }
+                            },
+                            "src": "2116:129:56",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint32",
+                              "typeString": "uint32"
+                            }
+                          },
+                          "src": "2071:174:56",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint32",
+                            "typeString": "uint32"
+                          }
+                        },
+                        "id": 12040,
+                        "nodeType": "ExpressionStatement",
+                        "src": "2071:174:56"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "components": [
+                      {
+                        "expression": {
+                          "id": 12043,
+                          "name": "observation",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12016,
+                          "src": "2286:11:56",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Observation_$15348_memory_ptr",
+                            "typeString": "struct Oracle.Observation memory"
+                          }
+                        },
+                        "id": 12044,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "blockTimestamp",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 15341,
+                        "src": "2286:26:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint32",
+                          "typeString": "uint32"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 12045,
+                          "name": "observation",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12016,
+                          "src": "2326:11:56",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Observation_$15348_memory_ptr",
+                            "typeString": "struct Oracle.Observation memory"
+                          }
+                        },
+                        "id": 12046,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "tickCumulative",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 15343,
+                        "src": "2326:26:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int56",
+                          "typeString": "int56"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 12047,
+                          "name": "observation",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12016,
+                          "src": "2366:11:56",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Observation_$15348_memory_ptr",
+                            "typeString": "struct Oracle.Observation memory"
+                          }
+                        },
+                        "id": 12048,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "secondsPerLiquidityCumulativeX128",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 15345,
+                        "src": "2366:45:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 12049,
+                          "name": "observation",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12016,
+                          "src": "2425:11:56",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Observation_$15348_memory_ptr",
+                            "typeString": "struct Oracle.Observation memory"
+                          }
+                        },
+                        "id": 12050,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "initialized",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 15347,
+                        "src": "2425:23:56",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "id": 12051,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "2272:186:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint32_$_t_int56_$_t_uint160_$_t_bool_$",
+                      "typeString": "tuple(uint32,int56,uint160,bool)"
+                    }
+                  },
+                  "functionReturnParameters": 12012,
+                  "id": 12052,
+                  "nodeType": "Return",
+                  "src": "2265:193:56"
+                }
+              ]
+            },
+            "functionSelector": "252c09d7",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "observations",
+            "parameters": {
+              "id": 12003,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12002,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12054,
+                  "src": "1781:13:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12001,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1781:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1780:15:56"
+            },
+            "returnParameters": {
+              "id": 12012,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12005,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12054,
+                  "src": "1856:6:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 12004,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1856:6:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12007,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12054,
+                  "src": "1876:5:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int56",
+                    "typeString": "int56"
+                  },
+                  "typeName": {
+                    "id": 12006,
+                    "name": "int56",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1876:5:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int56",
+                      "typeString": "int56"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12009,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12054,
+                  "src": "1895:7:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  },
+                  "typeName": {
+                    "id": 12008,
+                    "name": "uint160",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1895:7:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12011,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12054,
+                  "src": "1916:4:56",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 12010,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1916:4:56",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1842:88:56"
+            },
+            "scope": 12055,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          12055
+        ],
+        "name": "MockObservations",
+        "scope": 12056
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 56
+}

@@ -1,0 +1,1211 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "POOL_INIT_CODE_HASH",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "factory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token0",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token1",
+          "type": "address"
+        },
+        {
+          "internalType": "uint24",
+          "name": "fee",
+          "type": "uint24"
+        }
+      ],
+      "name": "computeAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "factory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token0",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token1",
+          "type": "address"
+        },
+        {
+          "internalType": "uint24",
+          "name": "fee",
+          "type": "uint24"
+        }
+      ],
+      "name": "getGasCostOfComputeAddress",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b506102d2806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80638716c5ff14610046578063cce34ec6146100a4578063dc6fd8ab146100f8575b600080fd5b6100886004803603608081101561005c57600080fd5b5080356001600160a01b03908116916020810135821691604082013516906060013562ffffff16610100565b604080516001600160a01b039092168252519081900360200190f35b6100e6600480360360808110156100ba57600080fd5b5080356001600160a01b03908116916020810135821691604082013516906060013562ffffff16610146565b60408051918252519081900360200190f35b6100e6610194565b600061013d856040518060600160405280876001600160a01b03168152602001866001600160a01b031681526020018562ffffff168152506101b8565b95945050505050565b6000805a9050610187866040518060600160405280886001600160a01b03168152602001876001600160a01b031681526020018662ffffff168152506101b8565b505a900395945050505050565b7fe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b5490565b600081602001516001600160a01b031682600001516001600160a01b0316106101e057600080fd5b50805160208083015160409384015184516001600160a01b0394851681850152939091168385015262ffffff166060808401919091528351808403820181526080840185528051908301206001600160f81b031960a085015294901b6bffffffffffffffffffffffff191660a183015260b58201939093527fe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b5460d5808301919091528251808303909101815260f590910190915280519101209056fea2646970667358221220ff8d137d6106346a8dfa9688f3802bb2643befeeb390ce54fce1a74dd514b8b764736f6c63430007060033",
+    "sourceMap": "104:803:64:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80638716c5ff14610046578063cce34ec6146100a4578063dc6fd8ab146100f8575b600080fd5b6100886004803603608081101561005c57600080fd5b5080356001600160a01b03908116916020810135821691604082013516906060013562ffffff16610100565b604080516001600160a01b039092168252519081900360200190f35b6100e6600480360360808110156100ba57600080fd5b5080356001600160a01b03908116916020810135821691604082013516906060013562ffffff16610146565b60408051918252519081900360200190f35b6100e6610194565b600061013d856040518060600160405280876001600160a01b03168152602001866001600160a01b031681526020018562ffffff168152506101b8565b95945050505050565b6000805a9050610187866040518060600160405280886001600160a01b03168152602001876001600160a01b031681526020018662ffffff168152506101b8565b505a900395945050505050565b7fe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b5490565b600081602001516001600160a01b031682600001516001600160a01b0316106101e057600080fd5b50805160208083015160409384015184516001600160a01b0394851681850152939091168385015262ffffff166060808401919091528351808403820181526080840185528051908301206001600160f81b031960a085015294901b6bffffffffffffffffffffffff191660a183015260b58201939093527fe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b5460d5808301919091528251808303909101815260f590910190915280519101209056fea2646970667358221220ff8d137d6106346a8dfa9688f3802bb2643befeeb390ce54fce1a74dd514b8b764736f6c63430007060033",
+    "sourceMap": "104:803:64:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;259:279;;;;;;;;;;;;;;;;-1:-1:-1;259:279:64;;-1:-1:-1;;;;;259:279:64;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;;;;259:279:64;;;;;;;;;;;;;;544:361;;;;;;;;;;;;;;;;-1:-1:-1;544:361:64;;-1:-1:-1;;;;;544:361:64;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;135:118;;;:::i;259:279::-;405:7;431:100;458:7;467:63;;;;;;;;496:6;-1:-1:-1;;;;;467:63:64;;;;;512:6;-1:-1:-1;;;;;467:63:64;;;;;525:3;467:63;;;;;431:26;:100::i;:::-;424:107;259:279;-1:-1:-1;;;;;259:279:64:o;544:361::-;702:7;721:17;741:9;721:29;;760:100;787:7;796:63;;;;;;;;825:6;-1:-1:-1;;;;;796:63:64;;;;;841:6;-1:-1:-1;;;;;796:63:64;;;;;854:3;796:63;;;;;760:26;:100::i;:::-;;889:9;877:21;;;544:361;-1:-1:-1;;;;;544:361:64:o;135:118::-;241:66:46;135:118:64;:::o;1305:512:46:-;1389:12;1434:3;:10;;;-1:-1:-1;;;;;1421:23:46;:3;:10;;;-1:-1:-1;;;;;1421:23:46;;1413:32;;;;;;-1:-1:-1;1668:10:46;;1680;;;;;1692:7;;;;;1657:43;;-1:-1:-1;;;;;1657:43:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1647:54;;;;;;-1:-1:-1;;;;;;1539:229:46;;;;;;;-1:-1:-1;;1539:229:46;;;;;;;;;;;;241:66;1539:229;;;;;;;;;;;;;;;;;;;;;;;;;1508:278;;;;;;1305:512::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "POOL_INIT_CODE_HASH()": "dc6fd8ab",
+    "computeAddress(address,address,address,uint24)": "8716c5ff",
+    "getGasCostOfComputeAddress(address,address,address,uint24)": "cce34ec6"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"POOL_INIT_CODE_HASH\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"factory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"}],\"name\":\"computeAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"factory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"}],\"name\":\"getGasCostOfComputeAddress\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/test/PoolAddressTest.sol\":\"PoolAddressTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":@mageswap/=node_modules/@mageswap/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":base64-sol/=node_modules/base64-sol/\",\":hardhat/=node_modules/hardhat/\"]},\"sources\":{\"contracts/libraries/PoolAddress.sol\":{\"keccak256\":\"0x5edd84eb8ba7c12fd8cb6cffe52e1e9f3f6464514ee5f539c2283826209035a2\",\"license\":\"GPL-2.0-or-later\",\"urls\":[\"bzz-raw://f375d0e6d5ea3674e1aa6f112b021e9a86721a6a2f3cb22d673378b30cf0e840\",\"dweb:/ipfs/QmWJir2qnJyp963mU6U3jEEx9i3H3V5BgKawAfSnG1pC8w\"]},\"contracts/test/PoolAddressTest.sol\":{\"keccak256\":\"0x262c6a5ae2512ee88845eb370f3f90230693c6c0e0240f50156effb312973753\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://c481151c8981e08ea1ac0933bed1feb7f600bad9018da0490c0426aa8ad0d53e\",\"dweb:/ipfs/QmPxs5a1CXuySNHSXgjdMaV82om2R2iNn7jjhMXPGchWA7\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "POOL_INIT_CODE_HASH",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "factory",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "fee",
+              "type": "uint24"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "computeAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "factory",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "fee",
+              "type": "uint24"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getGasCostOfComputeAddress",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@mageswap/=node_modules/@mageswap/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":base64-sol/=node_modules/base64-sol/",
+        ":hardhat/=node_modules/hardhat/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/test/PoolAddressTest.sol": "PoolAddressTest"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/libraries/PoolAddress.sol": {
+        "keccak256": "0x5edd84eb8ba7c12fd8cb6cffe52e1e9f3f6464514ee5f539c2283826209035a2",
+        "urls": [
+          "bzz-raw://f375d0e6d5ea3674e1aa6f112b021e9a86721a6a2f3cb22d673378b30cf0e840",
+          "dweb:/ipfs/QmWJir2qnJyp963mU6U3jEEx9i3H3V5BgKawAfSnG1pC8w"
+        ],
+        "license": "GPL-2.0-or-later"
+      },
+      "contracts/test/PoolAddressTest.sol": {
+        "keccak256": "0x262c6a5ae2512ee88845eb370f3f90230693c6c0e0240f50156effb312973753",
+        "urls": [
+          "bzz-raw://c481151c8981e08ea1ac0933bed1feb7f600bad9018da0490c0426aa8ad0d53e",
+          "dweb:/ipfs/QmPxs5a1CXuySNHSXgjdMaV82om2R2iNn7jjhMXPGchWA7"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/test/PoolAddressTest.sol",
+    "id": 12736,
+    "exportedSymbols": {
+      "PoolAddress": [
+        10360
+      ],
+      "PoolAddressTest": [
+        12735
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:869:64",
+    "nodes": [
+      {
+        "id": 12663,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:64",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "=",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 12664,
+        "nodeType": "ImportDirective",
+        "src": "64:38:64",
+        "nodes": [],
+        "absolutePath": "contracts/libraries/PoolAddress.sol",
+        "file": "../libraries/PoolAddress.sol",
+        "scope": 12736,
+        "sourceUnit": 10361,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 12735,
+        "nodeType": "ContractDefinition",
+        "src": "104:803:64",
+        "nodes": [
+          {
+            "id": 12673,
+            "nodeType": "FunctionDefinition",
+            "src": "135:118:64",
+            "nodes": [],
+            "body": {
+              "id": 12672,
+              "nodeType": "Block",
+              "src": "198:55:64",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "id": 12669,
+                      "name": "PoolAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10360,
+                      "src": "215:11:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_PoolAddress_$10360_$",
+                        "typeString": "type(library PoolAddress)"
+                      }
+                    },
+                    "id": 12670,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "POOL_INIT_CODE_HASH",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 10274,
+                    "src": "215:31:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12668,
+                  "id": 12671,
+                  "nodeType": "Return",
+                  "src": "208:38:64"
+                }
+              ]
+            },
+            "functionSelector": "dc6fd8ab",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "POOL_INIT_CODE_HASH",
+            "parameters": {
+              "id": 12665,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "163:2:64"
+            },
+            "returnParameters": {
+              "id": 12668,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12667,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12673,
+                  "src": "189:7:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12666,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "189:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "188:9:64"
+            },
+            "scope": 12735,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 12698,
+            "nodeType": "FunctionDefinition",
+            "src": "259:279:64",
+            "nodes": [],
+            "body": {
+              "id": 12697,
+              "nodeType": "Block",
+              "src": "414:124:64",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 12688,
+                        "name": "factory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12675,
+                        "src": "458:7:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 12691,
+                            "name": "token0",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 12677,
+                            "src": "496:6:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "id": 12692,
+                            "name": "token1",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 12679,
+                            "src": "512:6:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "id": 12693,
+                            "name": "fee",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 12681,
+                            "src": "525:3:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint24",
+                              "typeString": "uint24"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_uint24",
+                              "typeString": "uint24"
+                            }
+                          ],
+                          "expression": {
+                            "id": 12689,
+                            "name": "PoolAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10360,
+                            "src": "467:11:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_PoolAddress_$10360_$",
+                              "typeString": "type(library PoolAddress)"
+                            }
+                          },
+                          "id": 12690,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "PoolKey",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10281,
+                          "src": "467:19:64",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_PoolKey_$10281_storage_ptr_$",
+                            "typeString": "type(struct PoolAddress.PoolKey storage pointer)"
+                          }
+                        },
+                        "id": 12694,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "token0",
+                          "token1",
+                          "fee"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "467:63:64",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_PoolKey_$10281_memory_ptr",
+                          "typeString": "struct PoolAddress.PoolKey memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_struct$_PoolKey_$10281_memory_ptr",
+                          "typeString": "struct PoolAddress.PoolKey memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 12686,
+                        "name": "PoolAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10360,
+                        "src": "431:11:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_PoolAddress_$10360_$",
+                          "typeString": "type(library PoolAddress)"
+                        }
+                      },
+                      "id": 12687,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "computeAddress",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10359,
+                      "src": "431:26:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_address_$_t_struct$_PoolKey_$10281_memory_ptr_$returns$_t_address_$",
+                        "typeString": "function (address,struct PoolAddress.PoolKey memory) pure returns (address)"
+                      }
+                    },
+                    "id": 12695,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "431:100:64",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 12685,
+                  "id": 12696,
+                  "nodeType": "Return",
+                  "src": "424:107:64"
+                }
+              ]
+            },
+            "functionSelector": "8716c5ff",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "computeAddress",
+            "parameters": {
+              "id": 12682,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12675,
+                  "mutability": "mutable",
+                  "name": "factory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12698,
+                  "src": "292:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12674,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "292:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12677,
+                  "mutability": "mutable",
+                  "name": "token0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12698,
+                  "src": "317:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12676,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "317:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12679,
+                  "mutability": "mutable",
+                  "name": "token1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12698,
+                  "src": "341:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12678,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "341:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12681,
+                  "mutability": "mutable",
+                  "name": "fee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12698,
+                  "src": "365:10:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 12680,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "365:6:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "282:99:64"
+            },
+            "returnParameters": {
+              "id": 12685,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12684,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12698,
+                  "src": "405:7:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12683,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "405:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "404:9:64"
+            },
+            "scope": 12735,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 12734,
+            "nodeType": "FunctionDefinition",
+            "src": "544:361:64",
+            "nodes": [],
+            "body": {
+              "id": 12733,
+              "nodeType": "Block",
+              "src": "711:194:64",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    12712
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 12712,
+                      "mutability": "mutable",
+                      "name": "gasBefore",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 12733,
+                      "src": "721:17:64",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 12711,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "721:7:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 12715,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12713,
+                      "name": "gasleft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -7,
+                      "src": "741:7:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 12714,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "741:9:64",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "721:29:64"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 12719,
+                        "name": "factory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12700,
+                        "src": "787:7:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 12722,
+                            "name": "token0",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 12702,
+                            "src": "825:6:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "id": 12723,
+                            "name": "token1",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 12704,
+                            "src": "841:6:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "id": 12724,
+                            "name": "fee",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 12706,
+                            "src": "854:3:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint24",
+                              "typeString": "uint24"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_uint24",
+                              "typeString": "uint24"
+                            }
+                          ],
+                          "expression": {
+                            "id": 12720,
+                            "name": "PoolAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10360,
+                            "src": "796:11:64",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_PoolAddress_$10360_$",
+                              "typeString": "type(library PoolAddress)"
+                            }
+                          },
+                          "id": 12721,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "PoolKey",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10281,
+                          "src": "796:19:64",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_PoolKey_$10281_storage_ptr_$",
+                            "typeString": "type(struct PoolAddress.PoolKey storage pointer)"
+                          }
+                        },
+                        "id": 12725,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "token0",
+                          "token1",
+                          "fee"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "796:63:64",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_PoolKey_$10281_memory_ptr",
+                          "typeString": "struct PoolAddress.PoolKey memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_struct$_PoolKey_$10281_memory_ptr",
+                          "typeString": "struct PoolAddress.PoolKey memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 12716,
+                        "name": "PoolAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10360,
+                        "src": "760:11:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_PoolAddress_$10360_$",
+                          "typeString": "type(library PoolAddress)"
+                        }
+                      },
+                      "id": 12718,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "computeAddress",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10359,
+                      "src": "760:26:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_address_$_t_struct$_PoolKey_$10281_memory_ptr_$returns$_t_address_$",
+                        "typeString": "function (address,struct PoolAddress.PoolKey memory) pure returns (address)"
+                      }
+                    },
+                    "id": 12726,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "760:100:64",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 12727,
+                  "nodeType": "ExpressionStatement",
+                  "src": "760:100:64"
+                },
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 12731,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 12728,
+                      "name": "gasBefore",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12712,
+                      "src": "877:9:64",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "-",
+                    "rightExpression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 12729,
+                        "name": "gasleft",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -7,
+                        "src": "889:7:64",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_gasleft_view$__$returns$_t_uint256_$",
+                          "typeString": "function () view returns (uint256)"
+                        }
+                      },
+                      "id": 12730,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "889:9:64",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "877:21:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12710,
+                  "id": 12732,
+                  "nodeType": "Return",
+                  "src": "870:28:64"
+                }
+              ]
+            },
+            "functionSelector": "cce34ec6",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getGasCostOfComputeAddress",
+            "parameters": {
+              "id": 12707,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12700,
+                  "mutability": "mutable",
+                  "name": "factory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12734,
+                  "src": "589:15:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12699,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "589:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12702,
+                  "mutability": "mutable",
+                  "name": "token0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12734,
+                  "src": "614:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12701,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "614:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12704,
+                  "mutability": "mutable",
+                  "name": "token1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12734,
+                  "src": "638:14:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12703,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "638:7:64",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12706,
+                  "mutability": "mutable",
+                  "name": "fee",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12734,
+                  "src": "662:10:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 12705,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "662:6:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "579:99:64"
+            },
+            "returnParameters": {
+              "id": 12710,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12709,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12734,
+                  "src": "702:7:64",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12708,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "702:7:64",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "701:9:64"
+            },
+            "scope": 12735,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          12735
+        ],
+        "name": "PoolAddressTest",
+        "scope": 12736
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 64
+}
